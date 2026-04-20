@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 35% 14%;
+    --foreground: 0 0% 100%;
+    --card: 230 35% 18%;
+    --card-foreground: 0 0% 100%;
+    --popover: 230 35% 18%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 217 72% 22%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 230 35% 22%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 230 20% 25%;
+    --muted-foreground: 0 0% 63%;
+    --accent: 349 79% 59%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 20% 25%;
+    --input: 230 20% 25%;
+    --ring: 349 79% 59%;
+    --radius: 0.625rem;
+    --sidebar-background: 230 35% 16%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 349 79% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 35% 22%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 230 20% 25%;
+    --sidebar-ring: 349 79% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#1a1a2e] text-white;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-mono-timer {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .bg-navy-dark {
+    background-color: #1a1a2e;
+  }
+  .bg-navy-card {
+    background-color: #16213e;
+  }
+  .bg-navy-accent {
+    background-color: #0f3460;
+  }
+  .text-coral {
+    color: #e94560;
+  }
+  .bg-coral {
+    background-color: #e94560;
+  }
+  .border-navy {
+    border-color: #0f3460;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+  }
+}
